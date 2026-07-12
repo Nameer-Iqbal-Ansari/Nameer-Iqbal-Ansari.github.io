@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nameer Iqbal Ansari — RTL Design Engineer</title>
+<meta name="description" content="Nameer Iqbal Ansari — RTL Design Engineer specializing in ASIC, FPGA, and RISC-V based SoC development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">
+      <span class="brand-glyph">NI</span>
+      <span class="brand-text">nameer<span class="cursor">_</span>ansari</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-nav>home</a>
+      <a href="#about" data-nav>about</a>
+      <a href="#experience" data-nav>experience</a>
+      <a href="#projects" data-nav>projects</a>
+      <a href="#skills" data-nav>skills</a>
+      <a href="#education" data-nav>education</a>
+      <a href="#contact" data-nav class="nav-cta">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="section-inner hero-inner">
+    <p class="eyebrow mono">$ whoami</p>
+    <h1 class="hero-title">
+      Nameer Iqbal<br>Ansari
+    </h1>
+    <p class="hero-role">RTL Design Engineer <span class="dot">·</span> ASIC <span class="dot">·</span> FPGA <span class="dot">·</span> RISC&#8209;V</p>
+
+    <div class="waveform-wrap" aria-hidden="true">
+      <svg viewBox="0 0 1000 120" class="waveform" preserveAspectRatio="none">
+        <path class="trace trace-cyan" d="M0,60 L60,60 L60,20 L140,20 L140,100 L220,100 L220,60 L300,60 L300,20 L340,20 L340,60 L420,60 L420,100 L500,100 L500,20 L560,20 L560,60 L640,60 L640,100 L720,100 L720,20 L800,20 L800,60 L880,60 L880,100 L960,100 L960,60 L1000,60" fill="none"/>
+        <path class="trace trace-amber" d="M0,90 L40,90 L40,50 L100,50 L100,90 L180,90 L180,50 L260,50 L260,10 L320,10 L320,50 L400,50 L400,90 L460,90 L460,50 L540,50 L540,10 L620,10 L620,50 L700,50 L700,90 L760,90 L760,50 L840,50 L840,10 L920,10 L920,50 L1000,50" fill="none"/>
+      </svg>
+    </div>
+
+    <p class="hero-sub">Building RISC&#8209;V based SoC subsystems from RTL to silicon &mdash; SerDes, PCIe, JTAG debug, and CPU microarchitecture &mdash; currently at <strong>XCLR&nbsp;Technologies</strong>, Karachi.</p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+
+    <div class="status-register" role="list" aria-label="Quick facts">
+      <div class="reg-bit" role="listitem"><span class="led"></span><span class="reg-label">32 Gbps</span><span class="reg-sub mono">SerDes / PCIe&nbsp;Gen5</span></div>
+      <div class="reg-bit" role="listitem"><span class="led"></span><span class="reg-label">12nm</span><span class="reg-sub mono">timing closure</span></div>
+      <div class="reg-bit" role="listitem"><span class="led"></span><span class="reg-label">RVFA</span><span class="reg-sub mono">certified</span></div>
+      <div class="reg-bit" role="listitem"><span class="led"></span><span class="reg-label">GSoC</span><span class="reg-sub mono">'22 contributor / '23 mentor</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="section-tag mono">// about</p>
+    <h2 class="section-title">Profile</h2>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>I'm an RTL Design Engineer working across the ASIC and FPGA sides of RISC&#8209;V based SoC development &mdash; from block-level SystemVerilog and sign-off, up through chip-level firmware bring-up on silicon and FPGA hardware.</p>
+        <p>My day-to-day spans high-speed I/O (32&nbsp;Gbps SerDes, PCIe Gen5), protocol bridges and CDC-safe interconnect, low-power design, and JTAG/debug infrastructure &mdash; alongside longer-running research into out-of-order CPU microarchitecture and cache-coherent multicore systems.</p>
+        <p>I hold the RISC&#8209;V Foundational Associate (RVFA) certification, contributed to Google Summer of Code in 2022 and mentored in 2023 on the Azadi&#8209;SoC project, and I'm currently expanding my open-source RV32I core with out-of-order execution and exploring CHI-based cache coherency.</p>
+        <p class="about-open">Open to ASIC / FPGA / RISC&#8209;V design roles &mdash; Pakistan, Europe, UAE, and beyond.</p>
+      </div>
+      <div class="about-panel">
+        <div class="panel-header mono">// signal_path.log</div>
+        <ul class="about-timeline">
+          <li><span class="t">2019&ndash;23</span>BE Electrical Engineering, Usman Institute of Technology</li>
+          <li><span class="t">2020&ndash;23</span>Research Assistant, MERL &mdash; RV32I core, NOVA1 SoC</li>
+          <li><span class="t">2022</span>Google Summer of Code &mdash; Azadi&#8209;SoC contributor</li>
+          <li><span class="t">2023</span>GSoC Mentor &mdash; TileLink UH on Azadi&#8209;SoC</li>
+          <li><span class="t">2023&ndash;25</span>Associate Engineer, Xcelerium &mdash; 12nm timing closure</li>
+          <li><span class="t">2025&ndash;now</span>RTL Design Engineer, XCLR Technologies</li>
+          <li><span class="t">Aug 2025</span>RISC&#8209;V Foundational Associate certified</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section section-alt" id="experience">
+  <div class="section-inner">
+    <p class="section-tag mono">// experience</p>
+    <h2 class="section-title">Work History</h2>
+    <div class="timeline" id="timeline"><!-- injected by script.js --></div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <p class="section-tag mono">// projects</p>
+    <h2 class="section-title">Selected Work</h2>
+    <p class="section-lede">Every card below is a real subsystem, core, or research thread I've shipped or driven &mdash; click one to open the full write-up.</p>
+
+    <div class="filter-bar" id="filterBar" role="tablist" aria-label="Project filters"></div>
+
+    <div class="project-grid" id="projectGrid"><!-- injected by script.js --></div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <p class="section-tag mono">// skills</p>
+    <h2 class="section-title">Register Map</h2>
+    <p class="section-lede">Tools and languages, laid out like the address map of a peripheral &mdash; each block is a category, each chip inside it a signal I work with directly.</p>
+    <div class="regmap" id="regmap"><!-- injected by script.js --></div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="section-inner">
+    <p class="section-tag mono">// education</p>
+    <h2 class="section-title">Education &amp; Credentials</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-card-head">
+          <h3>Bachelor of Engineering, Electrical Engineering</h3>
+          <span class="mono edu-date">2019 &ndash; 2023</span>
+        </div>
+        <p class="edu-org">Usman Institute of Technology &middot; Specialization: Computer Systems &middot; CGPA 3.289</p>
+        <div class="chip-row">
+          <span class="chip">Digital Logic Design</span>
+          <span class="chip">Computer Architecture</span>
+          <span class="chip">Microprocessor-Based Systems</span>
+          <span class="chip">Embedded Systems</span>
+          <span class="chip">Operating Systems</span>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-head">
+          <h3>Certifications</h3>
+        </div>
+        <ul class="cert-list">
+          <li><strong>RISC&#8209;V Foundational Associate (RVFA)</strong> <span class="mono">&mdash; Aug 2025</span><br><span class="muted">Issuer: RISC&#8209;V International &middot; Sponsor: Linux Foundation</span></li>
+          <li><strong>RISC&#8209;V Fundamentals (LFD210)</strong> <span class="mono">&mdash; Aug 2025</span><br><span class="muted">Issuer &amp; Sponsor: Linux Foundation</span></li>
+        </ul>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-head">
+          <h3>Honors &amp; Awards</h3>
+        </div>
+        <ul class="cert-list">
+          <li><strong>Hasham Foundation Scholarship</strong> <span class="mono">&mdash; 2022</span><br><span class="muted">Usman Institute of Technology</span></li>
+          <li><strong>Linux Foundation (LiFT) Scholarship</strong> <span class="mono">&mdash; 2024</span></li>
+        </ul>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card-head">
+          <h3>Writing &amp; Publications</h3>
+        </div>
+        <ul class="cert-list">
+          <li><strong>Multicore SoC for SMP Linux</strong> <span class="muted">&mdash; Thesis</span></li>
+          <li><strong>NOVA Emulation Project</strong> <span class="muted">&mdash; open-source RISC&#8209;V application-class AI SoC, project doc</span></li>
+          <li><strong>A Summer of Opportunity</strong> <span class="muted">&mdash; Medium, on the GSoC experience</span></li>
+          <li><strong>Abstractions Can Lead Humanity to Ignorance</strong> <span class="muted">&mdash; Medium, technical opinion</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-contact" id="contact">
+  <div class="section-inner">
+    <p class="section-tag mono">// contact</p>
+    <h2 class="section-title">Let's talk silicon.</h2>
+    <p class="section-lede">Open to ASIC / FPGA / RISC&#8209;V design roles and collaborations. Reach out directly &mdash; I read everything.</p>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:nameeriqbalansari@gmail.com">
+        <span class="contact-label mono">email</span>
+        <span class="contact-value">nameeriqbalansari@gmail.com</span>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/nameer-ansari" target="_blank" rel="noopener">
+        <span class="contact-label mono">linkedin</span>
+        <span class="contact-value">/in/nameer&#8209;ansari</span>
+      </a>
+      <a class="contact-card" href="https://github.com/Nameer-Iqbal-Ansari" target="_blank" rel="noopener">
+        <span class="contact-label mono">github</span>
+        <span class="contact-value">Nameer&#8209;Iqbal&#8209;Ansari</span>
+      </a>
+      <a class="contact-card" href="tel:+923363033155">
+        <span class="contact-label mono">phone</span>
+        <span class="contact-value">+92 336 3033155</span>
+      </a>
+      <div class="contact-card contact-card-static">
+        <span class="contact-label mono">location</span>
+        <span class="contact-value">Karachi, Pakistan</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <span class="mono">&copy; <span id="year"></span> Nameer Iqbal Ansari</span>
+    <span class="mono footer-tag">// built with RTL-engineer instincts, not a template</span>
+  </div>
+</footer>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal-scroll">
+      <p class="mono modal-eyebrow" id="modalTag"></p>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-role mono" id="modalRole"></p>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-tech" id="modalTech"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
