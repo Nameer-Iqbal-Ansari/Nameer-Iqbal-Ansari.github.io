@@ -42,7 +42,7 @@
       <a href="#projects" data-nav>projects</a>
       <a href="#skills" data-nav>skills</a>
       <a href="#education" data-nav>education</a>
-      <a href="Nameer_Iqbal_Ansari_Resume.pdf" download class="nav-resume mono">résumé &darr;</a>
+      <button type="button" class="nav-resume mono" data-resume-trigger>résumé &darr;</button>
       <a href="#contact" data-nav class="nav-cta">contact</a>
     </nav>
   </div>
@@ -54,11 +54,17 @@
 <section class="hero" id="home">
   <div class="hero-grid-bg" aria-hidden="true"></div>
   <div class="section-inner hero-inner">
-    <p class="eyebrow mono">$ whoami</p>
-    <h1 class="hero-title">
-      Nameer Iqbal<br><span class="name-last">Ansari</span>
-    </h1>
-    <p class="hero-role">RTL Design Engineer <span class="dot">·</span> ASIC <span class="dot">·</span> FPGA <span class="dot">·</span> RISC&#8209;V</p>
+    <div class="hero-identity">
+      <div class="hero-avatar">
+        <img src="nameer.jpg" alt="Portrait of Nameer Iqbal Ansari" width="120" height="120">
+      </div>
+      <div class="hero-identity-text">
+        <h1 class="hero-title">
+          Nameer Iqbal<br><span class="name-last">Ansari</span>
+        </h1>
+        <p class="hero-role">RTL Design Engineer <span class="dot">·</span> ASIC <span class="dot">·</span> FPGA <span class="dot">·</span> RISC&#8209;V</p>
+      </div>
+    </div>
 
     <div class="waveform-wrap" aria-hidden="true">
       <svg viewBox="0 0 1000 120" class="waveform" preserveAspectRatio="none">
@@ -71,10 +77,10 @@
 
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="Nameer_Iqbal_Ansari_CV.pdf" class="btn btn-ghost" download>
+      <button type="button" class="btn btn-ghost" data-resume-trigger>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Resume
-      </a>
+      </button>
       <a href="#contact" class="btn btn-ghost">Get in Touch</a>
     </div>
 
@@ -258,10 +264,10 @@
         <span class="contact-label mono">location</span>
         <span class="contact-value">Karachi, Pakistan</span>
       </div>
-      <a class="contact-card" href="Nameer_Iqbal_Ansari_CV.pdf" download>
+      <button type="button" class="contact-card contact-card-btn" data-resume-trigger>
         <span class="contact-label mono">resume</span>
         <span class="contact-value">Download PDF &darr;</span>
-      </a>
+      </button>
     </div>
   </div>
 </section>
@@ -292,6 +298,49 @@
       <div class="modal-body" id="modalBody"></div>
       <div class="modal-tech" id="modalTech"></div>
       <p class="mono modal-hint">&larr; &rarr; to browse &middot; Esc to close</p>
+    </div>
+  </div>
+</div>
+
+<!-- RESUME PICKER MODAL -->
+<div class="modal-overlay" id="resumeModalOverlay" aria-hidden="true">
+  <div class="modal resume-modal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <button class="modal-close" id="resumeModalClose" aria-label="Close">&times;</button>
+    <div class="modal-scroll resume-modal-scroll">
+      <p class="mono modal-eyebrow" id="resumeModalTag">// download</p>
+      <h3 class="modal-title" id="resumeModalTitle">Choose a Resume</h3>
+      <p class="modal-role mono">Pick the version that matches the role &mdash; each is tailored to a different scope of work.</p>
+
+      <div class="resume-options">
+        <a class="resume-option" href="Nameer_Iqbal_Ansari_Resume_ASIC.pdf" download>
+          <span class="resume-option-icon mono">ASIC</span>
+          <span class="resume-option-text">
+            <span class="resume-option-title">ASIC Design Resume</span>
+            <span class="resume-option-sub">Standard-cell RTL, timing closure, physical sign-off</span>
+          </span>
+          <svg class="resume-option-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+
+        <a class="resume-option" href="Nameer_Iqbal_Ansari_Resume_FPGA.pdf" download>
+          <span class="resume-option-icon mono">FPGA</span>
+          <span class="resume-option-text">
+            <span class="resume-option-title">FPGA Design Resume</span>
+            <span class="resume-option-sub">Hardware bring-up, on-board debug, prototyping</span>
+          </span>
+          <svg class="resume-option-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+
+        <a class="resume-option resume-option-full" href="Nameer_Iqbal_Ansari_Resume.pdf" download>
+          <span class="resume-option-icon mono">FULL</span>
+          <span class="resume-option-text">
+            <span class="resume-option-title">Complete Resume <span class="resume-option-badge">ASIC + FPGA</span></span>
+            <span class="resume-option-sub">Full scope across chip and board &mdash; recommended default</span>
+          </span>
+          <svg class="resume-option-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+
+      <p class="mono modal-hint">Esc to close</p>
     </div>
   </div>
 </div>

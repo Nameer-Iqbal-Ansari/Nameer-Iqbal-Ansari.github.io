@@ -761,6 +761,54 @@ document.addEventListener("keydown", e => {
 });
 
 // ==========================================================================
+// RESUME PICKER MODAL
+// ==========================================================================
+let lastResumeFocusedEl = null;
+
+function openResumeModal(){
+  const overlay = document.getElementById("resumeModalOverlay");
+  if (!overlay) return;
+  overlay.classList.add("open");
+  overlay.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  lastResumeFocusedEl = document.activeElement;
+  document.getElementById("resumeModalClose").focus();
+}
+
+function closeResumeModal(){
+  const overlay = document.getElementById("resumeModalOverlay");
+  if (!overlay) return;
+  overlay.classList.remove("open");
+  overlay.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  if (lastResumeFocusedEl) lastResumeFocusedEl.focus();
+}
+
+document.querySelectorAll("[data-resume-trigger]").forEach(btn => {
+  btn.addEventListener("click", openResumeModal);
+});
+
+const resumeModalOverlay = document.getElementById("resumeModalOverlay");
+if (resumeModalOverlay){
+  document.getElementById("resumeModalClose").addEventListener("click", closeResumeModal);
+  resumeModalOverlay.addEventListener("click", e => {
+    if (e.target.id === "resumeModalOverlay") closeResumeModal();
+  });
+  document.addEventListener("keydown", e => {
+    if (!resumeModalOverlay.classList.contains("open")) return;
+    if (e.key === "Escape") closeResumeModal();
+    if (e.key === "Tab"){
+      const focusable = resumeModalOverlay.querySelectorAll('button, a[href]');
+      const list = Array.from(focusable).filter(el => !el.disabled);
+      if (!list.length) return;
+      const first = list[0], last = list[list.length - 1];
+      if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+    }
+  });
+}
+
+// ==========================================================================
 // NAV — mobile toggle + scrollspy
 // ==========================================================================
 
