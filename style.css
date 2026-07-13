@@ -592,6 +592,22 @@ a{ color:inherit; text-decoration:none; }
 }
 .copy-email-btn:hover{ border-color:var(--v); color:var(--v-bright); }
 .copy-email-btn.copied{ border-color:var(--t); color:var(--t); }
+.contact-card-copy{
+  font-family: inherit;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  color: var(--text);
+  padding: 22px;
+  display: flex; flex-direction: column; gap: 8px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.contact-card-copy:hover{ border-color:var(--v); transform:translateY(-2px); }
+.contact-card-copy.copied{ border-color:var(--t); }
+.contact-card-copy.copied .contact-value{ color:var(--t); }
 
 /* ============================================================
    FOOTER

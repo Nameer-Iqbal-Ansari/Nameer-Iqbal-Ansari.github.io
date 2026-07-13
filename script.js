@@ -892,6 +892,39 @@ if (copyEmailBtn){
 }
 
 // ==========================================================================
+// COPY PHONE
+// ==========================================================================
+
+const phoneCopyBtn = document.getElementById("phoneCopyBtn");
+if (phoneCopyBtn){
+  phoneCopyBtn.addEventListener("click", () => {
+    const phone    = phoneCopyBtn.dataset.copy;
+    const label    = document.getElementById("phoneCopyText");
+    const original = label.textContent;
+    const showCopied = () => {
+      label.textContent = "Copied!";
+      phoneCopyBtn.classList.add("copied");
+      setTimeout(() => {
+        label.textContent = original;
+        phoneCopyBtn.classList.remove("copied");
+      }, 1800);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(phone).then(showCopied).catch(() => {});
+    } else {
+      const ta = document.createElement("textarea");
+      ta.value = phone;
+      ta.style.position = "fixed";
+      ta.style.opacity  = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); showCopied(); } catch (err) {}
+      document.body.removeChild(ta);
+    }
+  });
+}
+
+// ==========================================================================
 // INIT
 // ==========================================================================
 
