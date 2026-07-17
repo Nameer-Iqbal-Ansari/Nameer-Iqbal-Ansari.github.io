@@ -589,7 +589,7 @@ const PROJECTS = [
 ];
 
 const REGMAP = [
-  { addr: "0x00", name: "RTL Design",         fields: ["RISC-V VLSU","JTAG","SerDes","PCIe","eFuse","UART","CDC","XBAR","Cache","AXI","APB","TileLink"] },
+  { addr: "0x00", name: "RTL Design",         fields: ["RISC-V","OOO Core","VLSU","JTAG","SerDes","PCIe","eFuse","UART","CDC","XBAR","Cache","AXI","APB","CHI","TileLink"] },
   { addr: "0x04", name: "EDA Tools",          fields: ["VCS","Verdi","Xilinx Vivado","GTKWave","CoreAssembler","CoreConsultant","QuestaSim","Verilator","FusionCompiler","PrimeTime"] },
   { addr: "0x08", name: "Formal Verification",fields: ["JasperGold","SVA"] },
   { addr: "0x0C", name: "Static Analysis",    fields: ["Synopsys SpyGlass (Lint / CDC / RDC)"] },
