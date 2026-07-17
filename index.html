@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nameer Iqbal Ansari — RTL Design Engineer</title>
+<meta name="description" content="Nameer Iqbal Ansari — RTL Design Engineer specializing in ASIC, FPGA, and RISC-V based SoC development.">
+
+<!-- Favicon: monogram glyph matching the nav brand mark -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%239d4dff'/%3E%3Cstop offset='55%25' stop-color='%23ff4ecd'/%3E%3Cstop offset='100%25' stop-color='%23ff8a3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%2307070d'/%3E%3Crect x='4' y='4' width='56' height='56' rx='10' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%2307070d' text-anchor='middle'%3ENI%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nameer Iqbal Ansari — RTL Design Engineer">
+<meta property="og:description" content="RTL Design Engineer building RISC-V based SoC subsystems — SerDes, PCIe, JTAG debug, and CPU microarchitecture.">
+<!-- og:image intentionally omitted — add one after deploying, e.g. og:image content="https://yourdomain.com/preview.png" (1200x630 recommended) -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nameer Iqbal Ansari — RTL Design Engineer">
+<meta name="twitter:description" content="RTL Design Engineer building RISC-V based SoC subsystems — SerDes, PCIe, JTAG debug, and CPU microarchitecture.">
+<meta name="twitter:image" content="og-image.png">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nameer Iqbal Ansari",
+  "jobTitle": "RTL Design Engineer",
+  "url": "https://yourdomain.com",
+  "email": "mailto:nameeriqbalansari@gmail.com",
+  "telephone": "+92-336-3033155",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Karachi",
+    "addressCountry": "PK"
+  },
+  "sameAs": [
+    "https://linkedin.com/in/nameer-ansari",
+    "https://github.com/Nameer-Iqbal-Ansari"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Usman Institute of Technology"
+  },
+  "knowsAbout": ["ASIC Design", "FPGA Design", "RISC-V", "RTL Design", "SystemVerilog", "SerDes", "PCIe", "JTAG"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">
+      <span class="brand-glyph">NI</span>
+      <span class="brand-text">nameer<span class="cursor">_</span>ansari</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-nav>home</a>
+      <a href="#about" data-nav>about</a>
+      <a href="#experience" data-nav>experience</a>
+      <a href="#projects" data-nav>projects</a>
+      <a href="#skills" data-nav>skills</a>
+      <a href="#education" data-nav>education</a>
+      <button type="button" class="nav-resume mono" data-resume-trigger>résumé &darr;</button>
+      <a href="#contact" data-nav class="nav-cta">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="section-inner hero-inner">
+    <div class="hero-identity">
+      <div class="hero-avatar">
+        <img src="me.png" alt="Portrait of Nameer Iqbal Ansari" width="120" height="120">
+      </div>
+      <div class="hero-identity-text">
+        <h1 class="hero-title">
+          Nameer Iqbal<br><span class="name-last">Ansari</span>
+        </h1>
+        <p class="hero-role">RTL Design Engineer <span class="dot">·</span> ASIC <span class="dot">·</span> FPGA <span class="dot">·</span> RISC&#8209;V</p>
+      </div>
+    </div>
+
+    <div class="waveform-wrap" aria-hidden="true">
+      <svg viewBox="0 0 1000 120" class="waveform" preserveAspectRatio="none">
+        <path class="trace trace-v" d="M0,60 L60,60 L60,20 L140,20 L140,100 L220,100 L220,60 L300,60 L300,20 L340,20 L340,60 L420,60 L420,100 L500,100 L500,20 L560,20 L560,60 L640,60 L640,100 L720,100 L720,20 L800,20 L800,60 L880,60 L880,100 L960,100 L960,60 L1000,60" fill="none"/>
+        <path class="trace trace-a" d="M0,90 L40,90 L40,50 L100,50 L100,90 L180,90 L180,50 L260,50 L260,10 L320,10 L320,50 L400,50 L400,90 L460,90 L460,50 L540,50 L540,10 L620,10 L620,50 L700,50 L700,90 L760,90 L760,50 L840,50 L840,10 L920,10 L920,50 L1000,50" fill="none"/>
+      </svg>
+    </div>
+
+    <p class="hero-sub">Building RISC&#8209;V based SoC subsystems from RTL to silicon, SerDes, PCIe, JTAG debug, and CPU microarchitecture, currently at <strong>XCLR&nbsp;Technologies</strong>, Karachi.</p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <button type="button" class="btn btn-ghost" data-resume-trigger>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Resume
+      </button>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+
+    <div class="status-register" role="list" aria-label="Quick facts">
+      <div class="reg-bit" role="listitem"><span class="led"></span><span class="reg-label">32 Gbps</span><span class="reg-sub mono">SerDes / PCIe&nbsp;Gen5</span></div>
+      <div class="reg-bit" role="listitem"><span class="led"></span><span class="reg-label">12nm</span><span class="reg-sub mono">timing closure</span></div>
+      <div class="reg-bit" role="listitem"><span class="led"></span><span class="reg-label">RVFA</span><span class="reg-sub mono">certified</span></div>
+      <div class="reg-bit" role="listitem"><span class="led"></span><span class="reg-label">GSoC</span><span class="reg-sub mono">'22 contributor / '23 mentor</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="section-tag mono">// about</p>
+    <h2 class="section-title">Profile</h2>
+    <div class="about-grid">
+      <div class="about-copy" style="text-align: justify;">
+        <p>I'm an RTL Design Engineer working across the ASIC and FPGA sides of RISC&#8209;V based SoC development, from block-level SystemVerilog and sign-off, up through chip-level firmware bring-up on silicon and FPGA hardware.</p>
+        <p>My day-to-day spans high-speed I/O (32&nbsp;Gbps SerDes, PCIe Gen5), protocol bridges and CDC-safe interconnect, low-power design, and JTAG/debug infrastructure, alongside longer-running research into out-of-order CPU microarchitecture and cache-coherent multicore systems.</p>
+        <p>I hold the RISC&#8209;V Foundational Associate (RVFA) certification, contributed to Google Summer of Code in 2022 and mentored in 2023 on the Azadi&#8209;SoC project, and I'm currently expanding my open-source RV32I core with out-of-order execution and exploring CHI-based cache coherency.</p>
+        <p class="about-open">Open to ASIC / FPGA / RISC&#8209;V design roles, Pakistan, Europe, Middle East, UK, USA, Malaysia and beyond.</p>
+      </div>
+      <div class="about-panel">
+        <div class="panel-header mono">// signal_path.log</div>
+        <ul class="about-timeline">
+          <li><span class="t">2019&ndash;2023</span>BE Electrical Engineering, Usman Institute of Technology</li>
+          <li><span class="t">2020&ndash;2023</span>Research Assistant, MERL, RV32I core, NOVA1 SoC</li>
+          <li><span class="t">2022</span><a href="https://summerofcode.withgoogle.com/archive/2022/projects/lkRwPJpN" target="_blank" rel="noopener" style="color:inherit">Google Summer of Code</a>, Azadi&#8209;SoC contributor</li>
+          <li><span class="t">2023</span><a href="https://summerofcode.withgoogle.com/archive/2023/projects/3TI8MLxs" target="_blank" rel="noopener" style="color:inherit">GSoC Mentor</a>, TileLink UH on Azadi&#8209;SoC</li>
+          <li><span class="t">2023&ndash;2025</span>Associate Engineer, Xcelerium, 12nm timing closure</li>
+          <li><span class="t">2025&ndash;Present</span>RTL Design Engineer, XCLR Technologies</li>
+          <li><span class="t">Aug 2025</span>RISC&#8209;V Foundational Associate certified</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section-alt" id="experience">
+  <div class="section-inner">
+    <p class="section-tag mono">// experience</p>
+    <h2 class="section-title">Work History</h2>
+    <div class="timeline" id="timeline"><!-- injected by script.js --></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <p class="section-tag mono">// projects</p>
+    <h2 class="section-title">Selected Work</h2>
+    <p class="section-lede">Every card below is a real subsystem, core, or research thread I've shipped or driven, click one to open the full write-up.</p>
+    <div class="filter-bar" id="filterBar" role="tablist" aria-label="Project filters"></div>
+    <div class="project-grid" id="projectGrid"><!-- injected by script.js --></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <p class="section-tag mono">// skills</p>
+    <h2 class="section-title">Register Map</h2>
+    <p class="section-lede">Tools and languages, laid out like the address map of a peripheral, each block is a category, each chip inside it a signal I work with directly.</p>
+    <div class="regmap" id="regmap"><!-- injected by script.js --></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="section-inner">
+    <p class="section-tag mono">// education</p>
+    <h2 class="section-title">Education &amp; Credentials</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-card-head">
+          <h3>Bachelor of Engineering, Electrical Engineering</h3>
+          <span class="mono edu-date">2019 &ndash; 2023</span>
+        </div>
+        <p class="edu-org">Usman Institute of Technology &middot; Specialization: Computer Systems &middot; CGPA 3.289</p>
+        <div class="chip-row">
+          <span class="chip">Digital Logic Design</span>
+          <span class="chip">Computer Architecture</span>
+          <span class="chip">Microprocessor-Based Systems</span>
+          <span class="chip">Embedded Systems</span>
+          <span class="chip">Operating Systems</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-card-head">
+          <h3>Certifications</h3>
+        </div>
+        <ul class="cert-list">
+          <li>
+            <strong>RISC&#8209;V Foundational Associate (RVFA)</strong> <span class="mono">&mdash; Aug 2025</span><br>
+            <span class="muted">Issuer: RISC&#8209;V International &middot; Sponsor: Linux Foundation</span><br>
+            <a href="https://drive.google.com/file/d/1z1fpt2OfPF7XnII6wgww-NcfHVIPzxW6/view?usp=sharing" target="_blank" rel="noopener">View Certificate &rarr;</a>
+          </li>
+          <li>
+            <strong>RISC&#8209;V Fundamentals (LFD210)</strong> <span class="mono">&mdash; Aug 2025</span><br>
+            <span class="muted">Issuer &amp; Sponsor: Linux Foundation</span><br>
+            <a href="https://drive.google.com/file/d/1Y6J0-w4Eb3vdHdDd8aP50niBvfDTKcsC/view?usp=sharing" target="_blank" rel="noopener">View Certificate &rarr;</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-card-head">
+          <h3>Honors &amp; Awards</h3>
+        </div>
+        <ul class="cert-list">
+          <li>
+            <strong>Hasham Foundation Scholarship</strong> <span class="mono">&mdash; 2022</span><br>
+            <span class="muted">Usman Institute of Technology</span>
+          </li>
+          <li>
+            <strong>Linux Foundation (LiFT) Scholarship</strong> <span class="mono">&mdash; 2024</span><br>
+            <a href="https://www.linuxfoundation.org/about/lift-scholarships" target="_blank" rel="noopener">Linux Foundation LiFT Scholarship &rarr;</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-card-head">
+          <h3>Writing &amp; Publications</h3>
+        </div>
+        <ul class="cert-list">
+          <li>
+            <strong><a href="https://github.com/Nameer-Iqbal-Ansari/Publications/blob/main/FYP%20Project%20-%20MULTICORE%20SoC%20For%20SMP%20Linux.pdf" target="_blank" rel="noopener">Multicore SoC for SMP Linux</a></strong>
+            <span class="muted">, Thesis</span>
+          </li>
+          <li>
+            <strong><a href="https://github.com/Nameer-Iqbal-Ansari/Publications/blob/main/NOVA%20EMULATION%20PROJECT%20Documentation.pdf" target="_blank" rel="noopener">NOVA Emulation Project</a></strong>
+            <span class="muted">, open-source RISC&#8209;V application-class AI SoC, project doc</span>
+          </li>
+          <li>
+            <strong><a href="https://medium.com/@n.i.ansari200/gsoc22-a-summer-of-opportunity-95b9b2bb9232" target="_blank" rel="noopener">A Summer of Opportunity</a></strong>
+            <span class="muted">, Medium, on the GSoC experience</span>
+          </li>
+          <li>
+            <strong><a href="https://medium.com/@n.i.ansari200/abstractions-can-lead-humanity-to-ignorance-97db2acefac0" target="_blank" rel="noopener">Abstractions Can Lead Humanity to Ignorance</a></strong>
+            <span class="muted">, Medium, technical opinion</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-contact" id="contact">
+  <div class="section-inner">
+    <p class="section-tag mono">// contact</p>
+    <h2 class="section-title">Let's talk silicon.</h2>
+    <p class="section-lede">Open to ASIC / FPGA / RISC&#8209;V design roles and collaborations, feel free to reach out through any of the channels below.</p>
+    <div class="contact-grid">
+      <a class="contact-card contact-card-email" href="mailto:nameeriqbalansari@gmail.com">
+        <span class="contact-label mono">email</span>
+        <span class="contact-value">nameeriqbalansari@gmail.com</span>
+        <button type="button" class="copy-email-btn" id="copyEmailBtn" aria-label="Copy email address">
+          <svg class="icon-copy" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <svg class="icon-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
+        </button>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/nameer-ansari" target="_blank" rel="noopener">
+        <span class="contact-label mono">linkedin</span>
+        <span class="contact-value">/in/nameer&#8209;ansari</span>
+      </a>
+      <a class="contact-card" href="https://github.com/Nameer-Iqbal-Ansari" target="_blank" rel="noopener">
+        <span class="contact-label mono">github</span>
+        <span class="contact-value">Nameer&#8209;Iqbal&#8209;Ansari</span>
+      </a>
+      <button type="button" class="contact-card contact-card-copy" id="phoneCopyBtn" data-copy="+923363033155">
+        <span class="contact-label mono">phone</span>
+        <span class="contact-value" id="phoneCopyText">+92 336 3033155</span>
+      </button>
+      <div class="contact-card contact-card-static">
+        <span class="contact-label mono">location</span>
+        <span class="contact-value">Karachi, Pakistan</span>
+      </div>
+      <button type="button" class="contact-card contact-card-btn" data-resume-trigger>
+        <span class="contact-label mono">resume</span>
+        <span class="contact-value">Download PDF &darr;</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <span class="mono">&copy; <span id="year"></span> Nameer Iqbal Ansari</span>
+    <span class="mono footer-tag">// Karachi, Pakistan</span>
+    <span class="mono footer-tag" id="footerBuild">// last updated 2026&#8209;07&#8209;17</span>
+  </div>
+</footer>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <button class="modal-nav modal-nav-prev" id="modalPrev" aria-label="Previous project">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="modal-nav modal-nav-next" id="modalNext" aria-label="Next project">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="modal-scroll">
+      <p class="mono modal-eyebrow" id="modalTag"></p>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-role mono" id="modalRole"></p>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-tech" id="modalTech"></div>
+      <p class="mono modal-hint">&larr; &rarr; to browse &middot; Esc to close</p>
+    </div>
+  </div>
+</div>
+
+<!-- RESUME PICKER MODAL -->
+<div class="modal-overlay" id="resumeModalOverlay" aria-hidden="true">
+  <div class="modal resume-modal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <button class="modal-close" id="resumeModalClose" aria-label="Close">&times;</button>
+    <div class="modal-scroll resume-modal-scroll">
+      <p class="mono modal-eyebrow" id="resumeModalTag">// download</p>
+      <h3 class="modal-title" id="resumeModalTitle">Choose a Resume</h3>
+      <p class="modal-role mono">Pick the version that matches the role, each is tailored to a different scope of work.</p>
+
+      <div class="resume-options">
+        <a class="resume-option" href="Nameer_Iqbal_Ansari_Resume_ASIC.pdf" download>
+          <span class="resume-option-icon mono">ASIC</span>
+          <span class="resume-option-text">
+            <span class="resume-option-title">ASIC Design Resume</span>
+            <span class="resume-option-sub">Standard-cell RTL, timing closure, physical sign-off</span>
+          </span>
+          <svg class="resume-option-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+
+        <a class="resume-option" href="Nameer_Iqbal_Ansari_Resume_FPGA.pdf" download>
+          <span class="resume-option-icon mono">FPGA</span>
+          <span class="resume-option-text">
+            <span class="resume-option-title">FPGA Design Resume</span>
+            <span class="resume-option-sub">Hardware bring-up, on-board debug, prototyping</span>
+          </span>
+          <svg class="resume-option-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+
+        <a class="resume-option resume-option-full" href="Nameer_Iqbal_Ansari_Resume.pdf" download>
+          <span class="resume-option-icon mono">FULL</span>
+          <span class="resume-option-text">
+            <span class="resume-option-title">Complete Resume <span class="resume-option-badge">ASIC + FPGA</span></span>
+            <span class="resume-option-sub">Full scope across chip and board, recommended default</span>
+          </span>
+          <svg class="resume-option-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+
+      <p class="mono modal-hint">Esc to close</p>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
