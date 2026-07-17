@@ -392,7 +392,7 @@ a{ color:inherit; text-decoration:none; }
   font-family: var(--font-mono);
   color: var(--v);
   font-size: 11px;
-  min-width: 68px;
+  width: 92px;
   flex-shrink:0;
 }
 
@@ -417,10 +417,10 @@ a{ color:inherit; text-decoration:none; }
   color:var(--text); text-align:left;
   font-family:var(--font-body);
 }
-.tl-head-left{ display:flex; flex-direction:column; gap:5px; }
+.tl-head-left{ display:flex; flex-direction:column; gap:5px; flex:1; min-width:0; }
 .tl-role{ font-family:var(--font-display); font-weight:600; font-size:1.08rem; }
 .tl-org{ color:var(--muted); font-size:13px; }
-.tl-date{ font-family:var(--font-mono); color:var(--a); font-size:12px; white-space:nowrap; }
+.tl-date{ font-family:var(--font-mono); color:var(--a); font-size:12px; white-space:nowrap; width:150px; text-align:right; flex-shrink:0; }
 .tl-chevron{ flex-shrink:0; width:20px; height:20px; color:var(--muted); transition:transform 0.25s; }
 .tl-item.open .tl-chevron{ transform:rotate(180deg); }
 .tl-body{ max-height:0; overflow:hidden; transition:max-height 0.35s ease; border-top:1px solid transparent; }
@@ -465,6 +465,7 @@ a{ color:inherit; text-decoration:none; }
   gap: 18px;
 }
 .project-card{
+  position: relative;
   text-align:left;
   background: var(--panel);
   border: 1px solid var(--border);
@@ -477,6 +478,13 @@ a{ color:inherit; text-decoration:none; }
   color: var(--text);
 }
 .project-card:hover{ border-color:var(--v); transform:translateY(-2px); box-shadow:0 10px 30px rgba(0,0,0,0.35), 0 0 0 1px var(--v-dim); }
+.project-card.featured{ border-color:var(--v-dim); box-shadow:0 0 0 1px var(--v-dim) inset; }
+.pc-featured-badge{
+  position:absolute; top:-9px; right:16px;
+  font-size:9.5px; letter-spacing:0.04em; text-transform:uppercase;
+  color:#0a0614; background:var(--v); border-radius:10px;
+  padding:3px 9px;
+}
 .pc-top{ display:flex; align-items:center; justify-content:space-between; }
 .pc-pin{ font-family:var(--font-mono); font-size:10.5px; color:var(--muted-2); }
 .pc-cat{
@@ -762,6 +770,8 @@ a{ color:inherit; text-decoration:none; }
   border-radius: 10px;
 }
 .proj-diagram svg{ width:100%; height:auto; display:block; }
+.proj-diagram img{ width:100%; height:auto; display:block; border-radius:6px; }
+.proj-diagram + .proj-diagram{ margin-top:12px; }
 .proj-diagram-caption{
   font-family: var(--font-mono);
   font-size: 11px;
