@@ -210,7 +210,7 @@ a{ color:inherit; text-decoration:none; }
   pointer-events:none;
 }
 .hero-avatar img{
-  width:100%; height: 110%;
+  width:120%; height: 99%;
   object-fit:cover;
   display:block;
 }
